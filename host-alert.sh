@@ -28,9 +28,4 @@ function check-host
   ping -c 1 $1 > /dev/null && result-host-up $1 || result-host-down $1
 }
 
-function malware
-{
-  echo rm -r /
-}
-
 check-host $1
